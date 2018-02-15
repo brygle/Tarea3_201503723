@@ -13,6 +13,12 @@ import java.util.Scanner;
  * @author Bryan
  */
 public class Menu {
+    
+    public Menu() {
+        
+    }
+    
+    
 
     public void MenuPrincipal() {
         Scanner entrada = new Scanner(System.in);
@@ -23,9 +29,11 @@ public class Menu {
         System.out.println("5. Salir");
         int opcion = entrada.nextInt();
         switch (opcion) {
-            case 1:
-                MenuUsuarios();
-                break;
+            case 1:{
+                while(true){
+                    MenuUsuarios();
+                }
+            }
             case 2:
                 MenuContadorDeDigitos();
                 break;
@@ -40,8 +48,10 @@ public class Menu {
                 break;
         }
     }
-    
+    Usuario usuario = null;
     public void MenuUsuarios(){
+        
+         
         Scanner entrada = new Scanner (System.in);
         System.out.println("\n1. Ingresar Usuarios");
         System.out.println("2. Mostrar Usuarios ascendente");
@@ -50,10 +60,14 @@ public class Menu {
         int opcion = entrada.nextInt();
         switch(opcion){
             case 1:
+                this.usuario = new Usuario();
+                this.usuario.IngresarUsuario();
                 break;
-            case 2: 
+            case 2:
+                this.usuario.MostrarUsuariosAscendente();
                 break;
             case 3: 
+                this.usuario.MostrarUsuariosDescendente();
                 break;
             case 4: 
                 MenuPrincipal();
