@@ -16,6 +16,12 @@ public class IPC1Tarea3_201503723 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Instancio un objeto de tipo Menu para poder ingresar a la clase Menu
+        Menu menu = new Menu();
+        System.out.println("[IPC1]Tarea3_201503723");
+        //con el objeto menu puedo dirigirme hacia el menu principal
+        menu.MenuPrincipal();
+        
     }
     
 }
