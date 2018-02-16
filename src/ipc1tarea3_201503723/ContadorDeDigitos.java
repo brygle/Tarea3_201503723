@@ -12,14 +12,18 @@ import java.util.Scanner;
  * @author Bryan
  */
 public class ContadorDeDigitos {
-
+    
+    //Las propiedades son el numero que se ingresa y  el tamaño 
     int numero;
     int cantidaDeDigitos;
     Scanner entrada = new Scanner(System.in);
 
+    /*Este metodo sirve para ingresar el numero*/
     public void IngresarNumeros() {
         System.out.println("\nIngresar Numero");
         this.numero = entrada.nextInt();
+        /*se verifica que el numero este entre el rango 0 a mil y sino con el ciclo
+        while se pide que lo repita*/
         if (numero >= 0 && numero <= 100000) {
         } else {
             while (numero < 0 || numero > 100000) {
@@ -30,8 +34,14 @@ public class ContadorDeDigitos {
         }
     }
     
+    //este metodo realiza la impresion de digitos del numero ingresado
     public void MostrarNumeroDeDigitos(){
         int digitos = 0;
+        /*mediante un bucle while se verifica que los numeros vaya siendo mayores
+        a potencias con base 10 para determinar cuantos digitos tiene si la condicion
+        de entrada del bucle no se cumple el exponente es la cantidad de digitos
+        del numero, el metodo Math.pow(10, digitos) sirve para elevar a 10 con un 
+        exponente llamado digitos*/
         while(this.numero >= (Math.pow(10, digitos))){
             digitos++;
         }
