@@ -39,6 +39,12 @@ public class TresNumeros {
             System.out.println(numero2);
         }else if(numero3>numero1&&numero3>numero2){
             System.out.println(numero3);
+        }else if(numero1==numero2&&numero1>numero3){
+            System.out.println(numero1 + " y " + numero2 + " son iguales");
+        }else if(numero1==numero3&&numero1>numero2){
+            System.out.println(numero1 + " y " + numero3 + " son iguales");
+        }else if(numero2==numero3&&numero2>numero1){
+            System.out.println(numero2 + " y " + numero3 + " son iguales");
         }
         
         //en este segundo bloque se compara para buscar el segundo numero mayor
@@ -54,6 +60,12 @@ public class TresNumeros {
             System.out.println(numero3);
         }else if(numero3<numero1&&numero3>numero2){
             System.out.println(numero3);
+        }else if(numero1==numero2&&numero1<numero3){
+            System.out.println(numero1 + " y " + numero2 + " son iguales");
+        }else if(numero1==numero3&&numero1<numero2){
+            System.out.println(numero1 + " y " + numero3 + " son iguales");
+        }else if(numero2==numero3&&numero2<numero1){
+            System.out.println(numero2 + " y " + numero3 + " son iguales");
         }
         
         //en este tercer bloque se compara para buscar el numero menor
@@ -64,6 +76,11 @@ public class TresNumeros {
         }else if(numero3<numero1&&numero3<numero2){
             System.out.println(numero3);
         }
+        
+        if(numero1==numero2&&numero1==numero3&&numero2==numero3){
+            System.out.println(numero1 + ", " + numero2 + " y " + numero3 + " son iguales");
+        }
+        
     }
     
 }
