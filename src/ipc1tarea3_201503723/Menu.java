@@ -54,7 +54,8 @@ public class Menu {
     /*se crea una referencia de tipo Usuario fuera del metodo para que podamos
     ingresar a el desde afuera, este menu de usuarios nos dirige hacia otras
     funcionalidades, en el case 1 al ingresar usuarios se crean instancias nuevas
-    de clase Usuario y solamente ahi y si intentamos mostrar los usuarios ascendente
+    de clase Usuario y solamente ahi si el objeto ya existe no se vuelve a 
+    instanciar nuevamente y si intentamos mostrar los usuarios ascendente
     o descendentemente sin antes ingresar usuarios nos manda error*/
     Usuario usuario = null;
     public void MenuUsuarios(){     
