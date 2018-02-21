@@ -66,8 +66,12 @@ public class Menu {
         int opcion = entrada.nextInt();
         switch(opcion){
             case 1:
-                this.usuario = new Usuario();
-                this.usuario.IngresarUsuario();
+                if(this.usuario==null){
+                    this.usuario = new Usuario();
+                    this.usuario.IngresarUsuario();
+                }else{
+                    this.usuario.IngresarUsuario();
+                }
                 break;
             case 2:
                 if(usuario!=null){
