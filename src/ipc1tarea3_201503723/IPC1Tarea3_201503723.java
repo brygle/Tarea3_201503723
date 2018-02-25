@@ -17,6 +17,7 @@ public class IPC1Tarea3_201503723 {
     public static void main(String[] args) {
         // TODO code application logic here
         //201503723 Bryan Gustavo Lopez Echeverria
+        //https://github.com/brygle/Tarea3_201503723.git
         //Instancio un objeto de tipo Menu para poder ingresar a la clase Menu
         Menu menu = new Menu();
         System.out.println("[IPC1]Tarea3_201503723");
